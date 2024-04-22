@@ -35,7 +35,7 @@ if ingredients_list:
     ingredients_string = ''
     
     for fruit_chosen in ingredients_list:
-        if fruit_chosen is in pd_df['FRUIT_NAME']:
+        if fruit_chosen in pd_df['FRUIT_NAME']:
             search_on = pd_df.loc['SEARCH_ON'].iloc[0]
         else:
             search_on = fruit_chosen
